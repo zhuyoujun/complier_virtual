@@ -22,7 +22,7 @@ def MajorityElement(num):
 	>>> num = 100*[100] + [i for i in range(99)]
 	>>> MajorityElement(num)
 	100
-	"""
+	""" ori
 	#time complexity is O(NlogN) if the sort method's complexity is O(NlogN)
 	num.sort()
 	return num[len(num)//2]
