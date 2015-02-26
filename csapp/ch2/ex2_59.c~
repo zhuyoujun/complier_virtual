@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include"show_bytes.c"
+
+main()
+{
+  unsigned int x = 0x89ABCDEF;
+  unsigned int y = 0x76543210;
+  unsigned int midx = x&0xFF;
+  unsigned int midy = y&(~0xFF);
+
+  unsigned int result;
+  
+  result = midx|midy;
+  show_int(&x);
+  show_int(&y);
+
+  show_int(&midx);
+  show_int(&midy);
+  show_int(&result); 
+
+}
