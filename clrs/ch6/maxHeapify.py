@@ -24,7 +24,6 @@ def maxHeapify(Array,i,size):
 	if right < size and Array[right] > Array[largest]:
 		largest = right
 	if largest !=i:
-		Array[largest],Array[i] = Array[i],Array[largest]
 		maxHeapify(Array,largest,size)
 
 def maxHeapify_iter(Array,i):
